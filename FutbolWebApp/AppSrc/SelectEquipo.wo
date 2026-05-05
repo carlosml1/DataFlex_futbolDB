@@ -1,5 +1,5 @@
-﻿// C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\AppSrc\SelectEntrenador.wo
-// SelectEntrenador
+﻿// C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\AppSrc\SelectEquipo.wo
+// SelectEquipo
 //
 
 Use cWebView.pkg
@@ -8,14 +8,13 @@ Use cWebMenuGroup.pkg
 Use cWebMenuItem.pkg
 Use cWebColumnButton.pkg
 Use cWebColumn.pkg
-Use ZoomEntrenador.wo
+Use ZoomEquipo.wo
 
 Use cligaDataDictionary.dd
 Use cequipoDataDictionary.dd
-Use centrenadorDataDictionary.dd
 
-Object oSelectEntrenador is a cWebView
-    Set psCaption to "SelectEntrenador"
+Object oSelectEquipo is a cWebView
+    Set psCaption to "SelectEquipo"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12
@@ -29,12 +28,8 @@ Object oSelectEntrenador is a cWebView
         Set DDO_Server To oliga_DD
     End_Object 
 
-    Object oentrenador_DD is a centrenadorDataDictionary
-        Set DDO_Server To oequipo_DD
-    End_Object 
-
-    Set Main_DD To oentrenador_DD
-    Set Server  To oentrenador_DD
+    Set Main_DD To oequipo_DD
+    Set Server  To oequipo_DD
 
 
     Object oList is a cWebList
@@ -45,29 +40,11 @@ Object oSelectEntrenador is a cWebView
         Set pbShowHeader to False
         Set piSortColumn to 0
 
-        Object oentrenadorNombre is a cWebColumn
-            Entry_Item entrenador.Nombre
-            Set psCaption to "entrenador.Nombre"
-            Set piWidth to 600
-            Set psCSSClass to "RowCaption"
-        End_Object 
-
-        Object oentrenadorApellido is a cWebColumn
-            Entry_Item entrenador.Apellido
-            Set psCaption to "entrenador.Apellido"
-            Set piWidth to 600
-        End_Object 
-
-        Object oentrenadorNacionalidad is a cWebColumn
-            Entry_Item entrenador.Nacionalidad
-            Set psCaption to "entrenador.Nacionalidad"
-            Set piWidth to 500
-        End_Object 
-
         Object oequipoNombre is a cWebColumn
             Entry_Item equipo.Nombre
             Set psCaption to "equipo.Nombre"
             Set piWidth to 1201
+            Set psCSSClass to "RowCaption"
         End_Object 
 
         Object oligaNombre is a cWebColumn
@@ -85,7 +62,7 @@ Object oSelectEntrenador is a cWebView
             Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
             Set peAlign to alignRight
 
-            WebRegisterPath ntNavigateForward oZoomEntrenador
+            WebRegisterPath ntNavigateForward oZoomEquipo
 
             Procedure OnClick
                 Send NavigatePath
@@ -149,7 +126,7 @@ Error DFERR_PROGRAM "NavigateForward to this from-parent child Select view not y
             Set psCSSClass to "WebClearMenuItem"
             Set psCaption to "New"
 
-            WebRegisterPath ntNavigateForward oZoomEntrenador
+            WebRegisterPath ntNavigateForward oZoomEquipo
 
             Procedure OnClick
                 Send NavigatePath
