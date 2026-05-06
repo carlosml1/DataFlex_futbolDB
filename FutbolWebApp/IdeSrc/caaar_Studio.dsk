@@ -1,7 +1,7 @@
 [Workspace]
 CurrentProject=WebApp.src
-Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\caaar_Studio.dsk
-CreateNew=3
+Location=C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\IdeSrc\caaar_Studio.dsk
+CreateNew=-1
 [TabWindows]
 GroupCount=1
 HorizontalGroups=1
@@ -9,13 +9,13 @@ HorizontalGroups=1
 GroupSize=40
 SelectedTab=0
 [Window0]
-Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEntrenador.wo
+Filename=C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\AppSrc\WebApp.src
 ViewType=1
 Top=21
 Left=0
 Bottom=718
 Right=1428
-CursorLine=22
-CursorColumn=0
+CursorLine=25
+CursorColumn=17
 TabIndex=0
 TabGroup=0

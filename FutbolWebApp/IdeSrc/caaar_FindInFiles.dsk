@@ -5,10 +5,10 @@ SubDirectories=1
 WholeWordOnly=0
 RegularExpression=0
 SearchWhere=0
-Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\caaar_FindInFiles.dsk
-[C:\DataFlex Projects\FutbolWebApp\AppSrc]
+Location=C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\IdeSrc\caaar_FindInFiles.dsk
+[C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\AppSrc]
 IsEnabled=1
-[C:\DataFlex Projects\FutbolWebApp\DDSrc]
+[C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\DDSrc]
 IsEnabled=1
-[C:\DataFlex Projects\FutbolWebApp\AppHtml]
+[C:\Users\caaar\Desktop\DataFlex_futbolDB\FutbolWebApp\AppHtml]
 IsEnabled=1
